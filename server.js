@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use('/api/cat', router);
 
-/*
+
 io.on('connection',(socket)=>{
     console.log('something');
     socket.on('disconnect', () => {
@@ -25,7 +25,6 @@ io.on('connection',(socket)=>{
     }, 1000)
 });
 
-*/
 
 http.listen(port, () => {
     console.log('express server started');
